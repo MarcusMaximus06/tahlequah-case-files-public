@@ -1,0 +1,7 @@
+# Nothing from the private vault may ever appear here.
+*.db
+*.db-journal
+*.sqlite
+.DS_Store
+Thumbs.db
+desktop.ini

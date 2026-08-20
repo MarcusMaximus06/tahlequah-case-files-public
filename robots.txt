@@ -1,0 +1,6 @@
+# Tahlequah Case Files - public research site.
+# This site is meant to be found and read, so indexing is allowed.
+User-agent: *
+Allow: /
+
+Sitemap: https://tahlequahcasefiles.org/sitemap.xml

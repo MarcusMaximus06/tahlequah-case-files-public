@@ -1,0 +1,48 @@
+/* Tahlequah Case Files - newsroom / archive aesthetic.
+   Deliberately sober: no tape, no splatter, no true-crime kitsch. */
+:root{
+  --bg:#f6f4ef; --panel:#fffdf8; --ink:#1c1a17; --muted:#5f5a52;
+  --rule:#d9d3c7; --accent:#5a3a2e; --accent2:#2f4858;
+  --confirmed:#1f5c3a; --reported:#5a4a1f; --alleged:#7a3b1f;
+  --theory:#3d3a70; --contradicted:#7a1f2b; --unknown:#5f5a52;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14130f; --panel:#1c1b17; --ink:#ece7dc; --muted:#a49d90;
+    --rule:#332f28; --accent:#c9a68f; --accent2:#8fb3c9;
+    --confirmed:#7fd0a4; --reported:#d6c07a; --alleged:#e0a077;
+    --theory:#a9a5e0; --contradicted:#e08d9a; --unknown:#a49d90;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.6}
+header.site{border-bottom:2px solid var(--rule);padding:1.5rem 1rem;background:var(--panel)}
+header.site h1{margin:0;font-size:1.7rem;letter-spacing:.02em}
+header.site .tag{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.14em}
+nav.site{padding:.6rem 1rem;border-bottom:1px solid var(--rule);background:var(--panel)}
+nav.site a{color:var(--accent2);margin-right:1.1rem;text-decoration:none;font-size:.9rem}
+nav.site a:hover{text-decoration:underline}
+main{max-width:60rem;margin:0 auto;padding:1.5rem 1rem 4rem}
+h2{border-bottom:1px solid var(--rule);padding-bottom:.3rem;margin-top:2rem}
+a{color:var(--accent2)}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  padding:1rem;margin:.8rem 0}
+.card h3{margin:.1rem 0 .4rem}
+.meta{color:var(--muted);font-size:.85rem}
+.notice{border-left:4px solid var(--accent);background:var(--panel);
+  padding:.8rem 1rem;margin:1rem 0;font-size:.92rem}
+.warn{border-left-color:var(--contradicted)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;border-bottom:1px solid var(--rule);padding:.45rem .5rem;vertical-align:top}
+.wrap{overflow-x:auto}
+.tag-badge{display:inline-block;font-family:ui-monospace,Consolas,monospace;
+  font-size:.7rem;letter-spacing:.08em;padding:.1rem .45rem;border:1px solid currentColor;
+  border-radius:2px;text-transform:uppercase}
+.c-CONFIRMED{color:var(--confirmed)} .c-REPORTED{color:var(--reported)}
+.c-ALLEGED{color:var(--alleged)} .c-THEORY{color:var(--theory)}
+.c-CONTRADICTED{color:var(--contradicted)} .c-UNKNOWN{color:var(--unknown)}
+.c-UNVERIFIED_LEAD{color:var(--unknown)}
+footer{border-top:1px solid var(--rule);padding:1.2rem 1rem;color:var(--muted);
+  font-size:.82rem;max-width:60rem;margin:0 auto}
+ul.plain{list-style:none;padding-left:0}
